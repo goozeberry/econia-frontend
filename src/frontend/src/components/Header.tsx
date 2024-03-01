@@ -95,12 +95,6 @@ export function Header({
                 Trade
               </NavItem>
               <NavItemDivider />
-              <NavItem
-                href="/faucet"
-                active={router.pathname.startsWith("/faucet")}
-              >
-                Faucet
-              </NavItem>
               <NavItemDivider />
               <NavItem
                 className="flex items-center gap-1"
@@ -171,13 +165,6 @@ const SlidingMenu = ({
           className=""
         >
           Trade
-        </NavItem>
-        <NavItem
-          href="/faucet"
-          active={router.pathname.startsWith("/faucet")}
-          className=""
-        >
-          Faucet
         </NavItem>
         <NavItem
           href="https://econia.dev"

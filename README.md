@@ -73,7 +73,6 @@ To deploy on Vercel, you'll need to set up the following environment variables:
 | Variable                                 | Meaning                                                                                |
 | ---------------------------------------- | -------------------------------------------------------------------------------------- |
 | `NEXT_PUBLIC_ECONIA_ADDR`                | The Econia address                                                                     |
-| `NEXT_PUBLIC_FAUCET_ADDR`                | The Econia faucet address                                                              |
 | `NEXT_PUBLIC_NETWORK_NAME`               | The network name (for example, mainnet)                                                |
 | `NEXT_PUBLIC_API_URL`                    | The Econia REST API URL                                                                |
 | `NEXT_PUBLIC_RPC_NODE_URL`               | Aptos RPC url                                                                          |
@@ -145,7 +144,6 @@ Click the `Deploy` button, wait for several minutes and see the results.
       frontend-->pages;
       pages-->trade;
       pages-->swap;
-      pages-->faucet;
       trade-->Header;
       trade-->StatsBar;
       trade-->TradingViewChart;
@@ -199,9 +197,6 @@ Click the `Deploy` button, wait for several minutes and see the results.
 
    - **TradeHistories**: Displaying a history of past trades, providing users with transaction details.
      - [src/frontend/src/components/trade/TradeHistoryTable.tsx](src/frontend/src/components/trade/TradeHistoryTable.tsx)
-
-7. **faucet**: A page allowing users to obtain base and quote tokens from a faucet, enabling them to initiate trades.
-   - [src/frontend/src/pages/faucet/index.tsx](src/frontend/src/pages/faucet/index.tsx)
 
 8. **swap**: (Future Development) A page planned for development in the future.
    - [src/frontend/pages/swap/](src/frontend/src/pages/swap/index.tsx)
