@@ -124,7 +124,7 @@ export const MarketOrderEntry: React.FC<{
       return Number(watchSize) <= Number(balance?.base_available);
     }
   }, [balance, watchSize, last_price]); // eslint-disable-line react-hooks/exhaustive-deps
-  console.log(isSufficient);  // eslint-disable-line no-console
+  console.log(isSufficient); // eslint-disable-line no-console
 
   const onSubmit = async ({ size }: MarketFormValues) => {
     if (marketData.base == null) {
@@ -242,24 +242,24 @@ export const MarketOrderEntry: React.FC<{
       <div className="mx-4 mb-4 flex flex-col gap-4">
         <OrderEntryInfo label={`EST. FEE `} value={estimateFee} />
         <ConnectedButton className="w-full">
-            <Button
-              type="submit"
-              variant={side === "buy" ? "green" : "red"}
-              className="py-[10px] !leading-5 tracking-[0.32px]"
-            >
-              {side === "buy" ? "BUY" : "SELL"} {marketData.base?.symbol}
-            </Button>
-            <Button
-              type="submit"
-              variant="blue"
-              className="w-full whitespace-nowrap py-[10px] uppercase !leading-5 tracking-[0.32px]"
-              onClick={(e) => {
-                e.preventDefault();
-                onDepositWithdrawClick && onDepositWithdrawClick();
-              }}
-            >
-              Add funds to continue
-            </Button>
+          <Button
+            type="submit"
+            variant={side === "buy" ? "green" : "red"}
+            className="py-[10px] !leading-5 tracking-[0.32px]"
+          >
+            {side === "buy" ? "BUY" : "SELL"} {marketData.base?.symbol}
+          </Button>
+          <Button
+            type="submit"
+            variant="blue"
+            className="w-full whitespace-nowrap py-[10px] uppercase !leading-5 tracking-[0.32px]"
+            onClick={(e) => {
+              e.preventDefault();
+              onDepositWithdrawClick && onDepositWithdrawClick();
+            }}
+          >
+            Add funds to continue
+          </Button>
         </ConnectedButton>
         <OrderEntryInfo
           label={`${marketData.base?.symbol} AVAILABLE`}
