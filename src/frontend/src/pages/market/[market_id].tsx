@@ -21,6 +21,7 @@ import { getAllMarket } from "@/utils/helpers";
 //eslint-disable-next-line
 let TVChartContainer: undefined | any = undefined;
 
+/*
 (() => {
   try {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -36,6 +37,7 @@ let TVChartContainer: undefined | any = undefined;
     //nothing
   }
 })();
+*/
 
 type Props = {
   marketData: ApiMarket;
