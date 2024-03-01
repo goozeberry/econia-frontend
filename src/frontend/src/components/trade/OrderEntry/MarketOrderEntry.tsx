@@ -124,6 +124,7 @@ export const MarketOrderEntry: React.FC<{
       return Number(watchSize) <= Number(balance?.base_available);
     }
   }, [balance, watchSize, last_price]); // eslint-disable-line react-hooks/exhaustive-deps
+  console.log(isSufficient);  // eslint-disable-line no-console
 
   const onSubmit = async ({ size }: MarketFormValues) => {
     if (marketData.base == null) {
