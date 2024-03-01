@@ -27,9 +27,7 @@ export default function Swap({ allMarketData }: Props) {
         <div className="flex flex-col items-center">
           <div className="mt-8 w-1/4">
             <div className="border p-3 text-center font-roboto-mono text-xs text-gray-300">
-              This is a testnet interface. All coins are used for testing
-              purposes and have no real value. If you are connecting a wallet,
-              make sure it is connected to Aptos testnet.
+              This is a mainnet interface honk.
             </div>
             <div className="mt-8 flex flex-col items-center gap-4 border p-8 text-center text-sm text-white">
               <Input

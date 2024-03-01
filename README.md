@@ -74,7 +74,7 @@ To deploy on Vercel, you'll need to set up the following environment variables:
 | ---------------------------------------- | -------------------------------------------------------------------------------------- |
 | `NEXT_PUBLIC_ECONIA_ADDR`                | The Econia address                                                                     |
 | `NEXT_PUBLIC_FAUCET_ADDR`                | The Econia faucet address                                                              |
-| `NEXT_PUBLIC_NETWORK_NAME`               | The network name (for example, testnet)                                                |
+| `NEXT_PUBLIC_NETWORK_NAME`               | The network name (for example, mainnet)                                                |
 | `NEXT_PUBLIC_API_URL`                    | The Econia REST API URL                                                                |
 | `NEXT_PUBLIC_RPC_NODE_URL`               | Aptos RPC url                                                                          |
 | `GITHUB_ACCESS_TOKEN`                    | Access token for GitHub account with TradingView repo access (only required in Vercel) |

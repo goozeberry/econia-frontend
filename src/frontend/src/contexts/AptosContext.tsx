@@ -87,7 +87,7 @@ export function AptosContextProvider({ children }: PropsWithChildren) {
   const coinListClient = useMemo(() => {
     return new CoinListClient(
       true,
-      (NETWORK_NAME as NetworkType) || "testnet",
+      (NETWORK_NAME as NetworkType) || "mainnet",
       NETWORK_NAME === "mainnet" ? MAINNET_TOKEN_LIST : TESTNET_TOKEN_LIST,
     );
   }, []);
