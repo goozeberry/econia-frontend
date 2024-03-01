@@ -241,7 +241,6 @@ export const MarketOrderEntry: React.FC<{
       <div className="mx-4 mb-4 flex flex-col gap-4">
         <OrderEntryInfo label={`EST. FEE `} value={estimateFee} />
         <ConnectedButton className="w-full">
-          {isSufficient ? (
             <Button
               type="submit"
               variant={side === "buy" ? "green" : "red"}
@@ -249,7 +248,6 @@ export const MarketOrderEntry: React.FC<{
             >
               {side === "buy" ? "BUY" : "SELL"} {marketData.base?.symbol}
             </Button>
-          ) : (
             <Button
               type="submit"
               variant="blue"
@@ -261,7 +259,6 @@ export const MarketOrderEntry: React.FC<{
             >
               Add funds to continue
             </Button>
-          )}
         </ConnectedButton>
         <OrderEntryInfo
           label={`${marketData.base?.symbol} AVAILABLE`}
